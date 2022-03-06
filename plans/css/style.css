@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+/* width */
+.summary::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  .summary::-webkit-scrollbar-track {
+    /* background: ;  */
+
+  }
+   
+  /* Handle */
+  .summary::-webkit-scrollbar-thumb {
+    background: #FFB830; 
+    /* position: absolute; */
+  }
+  
+  /* Handle on hover */
+  /* .summary::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+
+body {
+    /* background-color: #f4f5f7; */
+}
+
+.navbar, .navbar-nav a {
+    /* background: #fec24028; */
+    color:#2563eb!important ;
+}
+
+.bg-hitam {
+    background: #fff;
+
+
+}
+
+.hotel{
+}
+
+.banner-image {
+    
+}
+
+.banner{
+    background-color: #ffffff;
+    height: 70vh;
+    padding-top: 100px;
+}
+
+.wisata>div img, .resto>div img, .hotel>div img, .rental>div img, .hoteltransit>div img{
+    transition: all 0.3s;
+}
+
+.wisata>div:hover img{
+    transform: scale(120%);
+}
+
+.rental>div:hover img{
+    transform: scale(120%);
+}
+.hotel>div:hover img{
+    transform: scale(120%);
+}
+.hoteltransit>div:hover img{
+    transform: scale(120%);
+}
+.resto>div:hover img{
+    transform: scale(120%);
+}
+
+.destination {
+    width: 90%;
+    background-color: white;
+    margin-top: -30px;
+    position: relative;
+    font-size: 18px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.destination>span, .destination>select {
+    border-bottom: 3px solid #39A2DB;
+
+}
+
+.clr1{
+    color: #053742;
+}
+
+.clr2{
+    color: #39A2DB;
+}
+
+.poppins{
+    font-family: poppins;
+}
+
+.wisata {
+    font-family: poppins;
+    /* line-height: 30px; */
+}
+
+label{
+    font-family: poppins;
+    line-height: 25px;
+}
+
+.selection {
+    padding-left: 30px;
+    position: relative;
+    color: #39A2DB;
+}
+
+.selection::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    border-left: 3px #39A2DB solid;
+}
+
+.bullet {
+    position: relative;
+}
+
+.bullet::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 0;
+    /* transform: translateX(10px); */
+    /* margin-right: 15px; */
+    /* margin-left: 5px; */
+    /* transform: translateY(5px); */
+    border-radius: 50%;
+    background: #fff;
+    border: 3px #39A2DB solid;
+    width: 15px;
+    height: 15px;
+}
+
+.summary{
+    background-color: #2563eb!important;
+    height: 200px;
+    
+    transition: all 0.2s;
+    overflow-y: scroll;
+}
+
+.summary .border-bottom{
+    border-color: rgba(212, 212, 212, 0.521)!important;
+}
+.gambar-container{
+    height: 120px;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.gambar{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.f1{
+    font-size: 12px;
+}
+
+.f2{
+    font-size: 13px;
+}
+
+.abu{
+    color: #8a8a8a;
+}
+
+.fa-star{
+    color: #FFC93C;
+}
+
+.bg-blue{
+    background-color:#0ea8b9 ;
+}
+
+.radio-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]:checked~label>img, input[type=checkbox]:checked~label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px 2px #39A2DB;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio]~label>img, input[type=checkbox]~label>img {
+    border: 1px dashed #444;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+input[type=radio]:checked~label>.box, input[type=checkbox]:checked~label>.box{
+    box-shadow: 0 0 2px 2px #39A2DB !important;
+}
+
+input[type=radio]~label>.box, input[type=checkbox]~label>.box {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+[data-quantity] {
+    position: relative;
+    width: 100%;
+    max-width: 11rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  [data-quantity] legend {
+    display: none;
+  }
+  
+  [data-quantity] input {
+    font-size: 18px;
+    height: 40px;
+    border-radius: 2rem;
+    background: #fff;
+    outline: none;
+    border: 0;
+    
+    color: #222;
+    /* border: 1px solid #505050; */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: lighter;
+  }
+  
+  [data-quantity] input:focus {
+    outline: none;
+    box-shadow: 0 5px 55px -10px rgba(0, 0, 0, 0.2), 0 0 4px #3fb0ff; /* Allows border radius on focus */
+  }
+  
+  [data-quantity] input[type=number]::-webkit-inner-spin-button,
+  [data-quantity] input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* border: 1px solid ; */
+  }
+  
+  [data-quantity] input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  [data-quantity] button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* display: block; */
+    border: 1px solid #505050;
+    padding: 0;
+    margin: 0;
+    /* border: 0; */
+    background: #fff
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><path d="M17 25h16M67 25h16M75 17v16" fill="none" stroke="rgb(59,69,66)" stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" /></svg>')
+      no-repeat 0 0;
+    background-size: 5.33rem 2.5rem;
+    /* background-position-x: center; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    opacity: 0.5;
+  }
+  
+  [data-quantity] button:active {
+    background-position-y: 1px;
+    box-shadow: inset 0 2px 12px -4px #c5d1d9;
+  }
+  
+  [data-quantity] button:focus {
+    outline: none;
+  }
+  
+  [data-quantity] button:hover {
+    opacity: 1;
+  }
+  
+  [data-quantity] button.sub {
+    left: 0.6rem;
+  }
+  
+  [data-quantity] button.add {
+    right: 0.6rem;
+    background-position-x: -2.8rem;
+  }
+
+/* input[type=radio]:checked+label>img {
+        transform:
+            rotateZ(-10deg) rotateX(10deg);
+    } */
+.box {
+    width: 100%;
+    position: relative;
+    /* height: fit-content; */
+    color: #505050;
+}
+
+.htl{
+    height: 329px;
+}
+
+.box2{
+    position: absolute;
+    width: calc(100% - 35px);
+    
+    bottom: 15px;
+}
+
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .banner-image {
+        height: 70vh;
+    }
+
+    .destination {
+        width: 70%;
+        font-size: 23px;
+
+    }
+
+    .summary-container{
+        position: sticky;
+        align-self: flex-start;
+        top: 100px;
+    }
+
+    .summary{
+        height: 500px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

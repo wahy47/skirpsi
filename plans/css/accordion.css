@@ -1,0 +1,76 @@
+details summary::-webkit-details-marker { display: none; }
+summary::before {
+  font-family: "Hiragino Mincho ProN", "Open Sans", sans-serif;
+  content: "▶";
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+  transform: rotate(0);
+  transform-origin: center;
+  transition: 0.2s transform ease;
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+  transition: 0.45s transform ease;
+}
+details.style4 summary {
+  padding-right: 2.2rem;
+  padding-left: 1rem;
+}
+details.style4 summary::before {
+  content: "×";
+  color: #000;
+  font-size: 2rem;
+  line-height: 1rem;
+  transform: rotate(-45deg);
+  top: 1.2rem;
+  left: unset;
+  right: 0.6rem;
+}
+details[open].style4 > summary:before {
+  transform: rotate(90deg);
+  color: #F00 !important;
+  transition: color ease 2s, transform ease 1s;
+}
+details {
+  
+  box-sizing: border-box;
+  margin-top: 5px;
+  background: white;
+}
+summary {
+
+  border: 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: black;
+  padding: 1rem;
+  display: block;
+  background: #fff;
+  color: black;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+details[open] summary,
+summary:hover {
+  
+  border-top:1px solid #888;
+  border-right:1px solid #888;
+  border-left:1px solid #888;
+  border-bottom: none;
+  color: #39A2DB;
+  background: white;
+}
+summary:hover strong,
+details[open] summary strong,
+summary:hover::before,
+details[open] summary::before {
+  color: #FFA128;
+}
+.content {
+  padding: 10px;
+  border: 1px solid #888;
+  border-top: none;
+}
